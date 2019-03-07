@@ -13,7 +13,9 @@ class Plane():
         # self.airport = airport
     #
     def take_off(self):
-        self.isFlying = True
-    #
+        if self.isFlying == True:
+            raise Exception('Plane cannot takeoff while flying')
+        else:
+            self.isFlying = True
     # def is_at_airport(self):
     #     return self.__at_airport
