@@ -23,7 +23,7 @@ class TestPlane(unittest.TestCase):
         self.plane.take_off()
         self.assertTrue(self.plane.isFlying)
 
-    def test_raise_exception_if_trying_to_takeoff_while_flying(self):
+    def test_3_raise_exception_if_trying_to_takeoff_while_flying(self):
         self.plane.land()
         self.plane.take_off()
         with self.assertRaisesRegexp(Exception, 'Plane cannot takeoff while flying'):
