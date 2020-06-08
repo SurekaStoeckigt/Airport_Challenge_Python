@@ -28,8 +28,8 @@ class TestPlane(unittest.TestCase):
     #     self.plane.take_off()
     #     with self.assertRaisesRegexp(Exception, 'Plane cannot takeoff while flying'):
     #         self.plane.take_off()
-        
-    def test_2_set_request(self): 
+
+    def test_2_set_request(self):
         self.plane.setRequestToLand()
         self.assertTrue(self.plane.requestedToLand)
 
